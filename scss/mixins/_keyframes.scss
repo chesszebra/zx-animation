@@ -1,0 +1,23 @@
+///
+/// @include zx-keyframes(slide-down) {
+///   0% { opacity: 1; }
+///   90% { opacity: 0; }
+/// }
+///
+@mixin zx-keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @-o-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
